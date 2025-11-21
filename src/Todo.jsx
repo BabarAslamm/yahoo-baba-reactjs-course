@@ -30,8 +30,8 @@ function Todo() {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <h1>Enter New Todo</h1>
-                <label>Todo : </label><br />
+                <h1>Todo App</h1>
+                <label>Enter New Todo : </label><br />
                 <input
                     type="text"
                     value={newTodo}
