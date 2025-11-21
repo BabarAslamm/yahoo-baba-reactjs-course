@@ -16,7 +16,7 @@ function Todo() {
         
     }
     
-    const handleDelete = (index) => {
+    const handleComplete = (index) => {
 
         const newTodos = [...todos];
         console.log('delete', index)
@@ -50,7 +50,7 @@ function Todo() {
                 >
                     {todo.text}
 
-                    <button onClick={() => handleDelete(index)}> 
+                    <button onClick={() => handleComplete(index)}> 
                         
                         {todo.is_completed ?   'UnDo' : 'Done'}
                         </button>
