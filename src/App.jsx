@@ -6,6 +6,7 @@ import Todo from './Todo'
 import Home from './pages/Home'
 import About from './pages/About'
 import Offer from './pages/Offer'
+import User from './pages/User'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
               <Link  to="/home">Home </Link> |
               <Link  to="/about">About </Link> |
               <Link  to="/offer">Offer </Link>
+              <Link  to="/user/10">User </Link>
           </li> 
         </nav>
         <br />
@@ -32,6 +34,7 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/offer' element={<Offer />} />
+        <Route path='/user/:id' element={<User />} />
       </Routes>
       </BrowserRouter>
       
